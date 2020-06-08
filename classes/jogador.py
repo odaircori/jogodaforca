@@ -12,13 +12,17 @@ class Jogador(object):
         if self.acertou:
             pass
         else:
-            print('Mais um erro')
+            self.acertou = False
             self.erros+=1
 
     def registraganho(self):
         self.ganhou+=1
+        self.partidas+=1
+        self.acertou = False
 
     def registraderrotas(self):
         self.perdeu+=1
+        self.partidas+=1
+        self.acertou = False
 
 

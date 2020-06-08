@@ -1,5 +1,6 @@
 import os
 import random
+import codecs
 
 arquivo_path = os.path.abspath('arquivos/palavras.txt')
 
@@ -12,7 +13,7 @@ class Palavra(object):
     lacunas = ''
 
     def __init__(self):
-        arquivo_palavras = open(arquivo_path, 'r')
+        arquivo_palavras = codecs.open(arquivo_path, 'r', encoding='utf-8')
         self.arquivo_completo = [texto for texto in arquivo_palavras]
 
     def verificaresultado(self):
@@ -35,7 +36,6 @@ class Palavra(object):
         for ind, sorteada in enumerate(self.arquivo_completo):
             if sorteada == self.palavra:
                 print(f'Palavra sorteada é {sorteada}')
-                print(f'Índice da palavra sorteada {ind}')
                 self.dica = self.arquivo_completo[ind+1]
                 break
 

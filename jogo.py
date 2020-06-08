@@ -26,9 +26,9 @@ while jogar:
             if palavra.jogarnovamente(jogarNovamente):
                 palavra.sorteia()
                 player.erros = 0
-                player.acertou = False
                 break
             else:
+                print(f'Você jogou {player.partidas} partidas obtendo {player.perdeu} derrota(s) e {player.ganhou} vitória(s)')
                 jogar = False
                 break
 
@@ -40,9 +40,9 @@ while jogar:
             if palavra.jogarnovamente(jogarNovamente):
                 palavra.sorteia()
                 player.erros = 0
-                player.acertou  = False
                 break
             else:
+                print(f'Você jogou {player.partidas} partidas obtendo {player.perdeu} derrota(s) e {player.ganhou} vitória(s)')
                 jogar = False
                 break
 
