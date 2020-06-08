@@ -10,6 +10,7 @@ class Jogador(object):
 
     def contaerros(self):
         if self.acertou:
+            self.acertou = False
             pass
         else:
             self.acertou = False
