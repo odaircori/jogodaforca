@@ -1,8 +1,8 @@
 python
 Linguagem de Programação
 teste
-O que o programador faz para verificar erros na aplicação
+O que a área de qualidade faz para verificar erros na aplicação
 jogo
 Tradução de "Game"
-Kathleen
-Quem é o meu amor?
+pandemia
+Nome dado a uma epidemia que se espalha em uma grande região geográfica
